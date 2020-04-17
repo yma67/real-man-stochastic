@@ -23,7 +23,6 @@ int main() {
     V.block(0, absorbed, absorbed, N - absorbed) = Q.block(0, absorbed + 1, absorbed, N - absorbed);
     V.block(absorbed, 0, N - absorbed, absorbed) = Q.block(absorbed + 1, 0, N - absorbed, absorbed);
     V.block(absorbed, absorbed, N - absorbed, N - absorbed) = Q.block(absorbed + 1, absorbed + 1, N - absorbed, N - absorbed);
-    V.conservativeResize(N, N);
     std::cout << ">>> V" << std::endl;
     std::cout << V << std::endl;
     F = -(V.inverse());
