@@ -31,5 +31,4 @@ int main() {
     std::cout << F << std::endl;
     std::cout << F.row((start > absorbed) ? (start - 1) : start).sum() << std::endl;
     return 0;
-
 }
